@@ -15,11 +15,38 @@
   div:nth-child(3) {
     justify-self: end;
   }
+
+  & .logo {
+    width: 120px;
+  }
 }
 
 #secondary {
+  display: flex;
+  padding-block: 14px;
+  gap: 1rem;
+  border: solid 1px var(--stroke-color);
+  border-inline: none;
+  justify-content: space-between;
+  overflow-x: auto;
+
+  & a {
+    white-space: nowrap;
+  }
+}
+
+@media (width >= 80em) {
+  #primary {
+
+    & .logo {
+      width: 160px;
+    }
+  }
+
+  #secondary {
   padding-block: 14px;
   border: solid 1px var(--stroke-color);
   border-inline: none;
   justify-content: space-between;
+}
 }

@@ -15,18 +15,18 @@
     <nav id="primary" class="grid grid-flow-col">
       <div>
         <img src="assets/icons/List.svg" alt="">
-        <strong>Menu</strong>
+        <strong class="desktop-only">Menu</strong>
       </div>
       <div>
-        <img src="assets/Logo.png" alt="">
+        <img src="assets/Logo.png" alt="" class="logo">
       </div>
       <div>
-        <strong>Buscar</strong>
+        <strong class="desktop-only">Buscar</strong>
         <img src="assets/icons/MagnifyingGlass.svg" alt="">
       </div>
     </nav>
     <nav id="secondary" class="grid grid-flow-col">
-      <a href="">Inteligência Artificial</a>
+      <a href="#">Inteligência Artificial</a>
       <a href="#">Blockchain</a>
       <a href="#">Hologramas</a>
       <a href="#">Internet</a>
@@ -37,14 +37,15 @@
   </header>
 
   <main class="grid container">
-    <section id="featured" class="grid grid-flow-col gap-16">
+    <section id="featured" class="grid grid-flow-col-desktop gap-16">
       <figure class="card">
-        <img src="assets/images/Image 01.png" alt="">
+        <img src="assets/images/Image 01.png" alt="" class="robo">
         <figcaption>
           <span class="content-tag">robótica</span>
-          <h2 class="text-2xl">
+          <h2 class="text-2xl texto-desktop-only">
             Robôs domésticos começam a ser adotados para tarefas diárias, prometendo mais conforto e eficiência nas residências.
           </h2>
+          <h2 class="text-2xl texto-celular"></h2>
         </figcaption>
       </figure>
       <div class="grid grid-cols-2 gap-16">
@@ -86,6 +87,7 @@
         </figure>
       </div>
     </section>
+
     <section id="weekly">
       <header class="grid grid-flow-col">
         <h3>Mais lidas da semana</h3>
@@ -128,61 +130,70 @@
         </a>
       </header>
       
-      <div class="grid gap-32">
+      <div class="grid gap-32 texto-e-imagem">
         <article class="grid grid-flow-col">
-          <div>
+          <div class="texto-ia">
             <span class="content-tag">Inteligência Artificial</span>
-            <h3 class="text-xl">Empresa surpreende o mundo ao anunciar um algoritmo capaz de prever eventos futuros com alta precisão.</h3>
-            <p class="text-sm">
+            <h3 class="text-xl texto-desktop-only">Empresa surpreende o mundo ao anunciar um algoritmo capaz de prever eventos futuros com alta precisão.</h3>
+            <h3 class="texto-titulo-mulher"></h3>
+            <p class="text-sm texto-desktop-only">
               Em um avanço surpreendente da inteligência artificial, uma empresa anuncia o desenvolvimento de um algoritmo capaz de prever eventos futuros com notável precisão. Descubra como essa tecnologia está desafiando as fronteiras da previsão e quais são as implicações para diversas áreas, desde finanças até plan...
             </p>
+            <p class="texto-phone-mulher"></p>
           </div>
-          <div>
+          <div class="imagens-ia">
             <img src="assets/images/Image 10.png" alt="">
           </div>
         </article>
 
         <article class="grid grid-flow-col">
-          <div>
+          <div class="texto-ia">
             <span class="content-tag">Inteligência Artificial</span>
-            <h3 class="text-xl">Dispositivo portátil promete traduzir instantaneamente diferentes idiomas, facilitando a comunicação global.</h3>
-            <p class="text-sm">
+            <h3 class="text-xl texto-desktop-only">Dispositivo portátil promete traduzir instantaneamente diferentes idiomas, facilitando a comunicação global.</h3>
+            <h3 class="texto-titulo-homem"></h3>
+            <p class="text-sm texto-desktop-only">
               Em um mundo cada vez mais conectado, a comunicação sem fronteiras é essencial. Nesse contexto, um dispositivo portátil surge como um verdadeiro herói linguístico, prometendo quebrar as barreiras idiomáticas instantaneamente. Imagine poder se comunicar fluentemente em qualquer lugar do mundo, indepe...
             </p>
+            <p class="texto-phone-homem"></p>
           </div>
-          <div>
+          <div class="imagens-ia">
             <img src="assets/images/Image 11.png" alt="">
           </div>
         </article>
 
         <article class="grid grid-flow-col">
-          <div>
+          <div class="texto-ia">
             <span class="content-tag">Inteligência Artificial</span>
-            <h3 class="text-xl">Criados para auxiliar idosos, robôs de companhia ganham popularidade, oferecendo suporte emocional e físico aos usuár...</h3>
-            <p class="text-sm">
+            <h3 class="text-xl texto-desktop-only">Criados para auxiliar idosos, robôs de companhia ganham popularidade, oferecendo suporte emocional e físico aos usuár...</h3>
+            <h3 class="texto-titulo-notebook"></h3>
+            <p class="text-sm texto-desktop-only">
               A tecnologia não só avança, mas também busca tornar a vida mais significativa para todas as gerações. No cenário atual, os robôs sociais, projetados especialmente para oferecer apoio e companhia aos idosos, estão ganhando destaque. Mais do que meros assistentes, esses robôs são programados para f...
             </p>
+            <p class="texto-phone-notebook"></p>
           </div>
-          <div>
+          <div class="imagens-ia">
             <img src="assets/images/Image 12.png" alt="">
           </div>
         </article>
 
         <article class="grid grid-flow-col">
-          <div>
+          <div class="texto-ia">
             <span class="content-tag">Inteligência Artificial</span>
-            <h3 class="text-xl">Aplicativo utiliza inteligência artificial para ajudar usuários a manterem o foco e aumentarem a produtividade no dia a dia.
-</h3>
-            <p class="text-sm">
+                  <h3 class="text-xl texto-desktop-only">Aplicativo utiliza inteligência artificial para ajudar usuários a manterem o foco e aumentarem a produtividade no dia a dia.
+      </h3>
+      <h3 class="texto-titulo-mulher-ruiva"></h3>
+            <p class="text-sm texto-desktop-only">
               No turbilhão da vida moderna, onde distrações são abundantes, um aplicativo inovador surge como um aliado indispensável para quem busca maior concentração e eficiência no cotidiano. Utilizando avançados algoritmos de inteligência artificial, este aplicativo promete mais do que simplesmente gerenci...
             </p>
+            <p class="texto-phone-mulher-ruiva"></p>
           </div>
-          <div>
+          <div class="imagens-ia">
             <img src="assets/images/Image 13.png" alt="">
           </div>
         </article>
-      </div>
-    </section>
+        </div>
+        </section>
+    </div>
 
     <aside>
       <div id="ads">
@@ -208,7 +219,8 @@
 
           <div>
             <span class="content-tag">Software</span>
-            <h3 class="text-xl">Aplicativo de monitoramento ambiental ganha destaque, incentivando práticas ecológicas e pro...</h3>
+            <h3 class="text-xl texto-desktop-only">Aplicativo de monitoramento ambiental ganha destaque, incentivando práticas ecológicas e pro...</h3>
+            <h3 class="titulo-crypto"></h3>
           </div>
         </article>
 
@@ -219,7 +231,8 @@
 
           <div>
             <span class="content-tag">Realidade Virtual</span>
-            <h3 class="text-xl">Óculos de realidade virtual com feedback tátil proporcionam uma experiência sensorial complet...</h3>
+            <h3 class="text-xl texto-desktop-only">Óculos de realidade virtual com feedback tátil proporcionam uma experiência sensorial complet...</h3>
+            <h3 class="titulo-glasses"></h3>
           </div>
         </article>
 
@@ -230,7 +243,9 @@
 
           <div>
             <span class="content-tag">Criptomoedas</span>
-            <h3 class="text-xl">Surge uma nova moeda digital baseada em tecnologias sustentáveis, buscando minimizar...</h3>
+            <h3 class="text-xl texto-desktop-only">Surge uma nova moeda digital baseada em tecnologias sustentáveis, buscando minimizar...</h3>
+            <h3 class="titulo-bitcoin"></h3>
+
           </div>
         </article>
 
@@ -241,7 +256,8 @@
 
           <div>
             <span class="content-tag">Drones</span>
-            <h3 class="text-xl">Empresas de e-commerce implementam frota de drones para entregas rápidas, transformando o...</h3>
+            <h3 class="text-xl texto-desktop-only">Empresas de e-commerce implementam frota de drones para entregas rápidas, transformando o...</h3>
+            <h3 class="titulo-drone"></h3>
           </div>
         </article>
 
@@ -252,7 +268,8 @@
 
           <div>
             <span class="content-tag">Impressão 3d</span>
-            <h3 class="text-xl">Tecnologia inovadora permite a impressão 3D de órgãos humanos, revolucionando a medicina e a...</h3>
+            <h3 class="text-xl texto-desktop-only">Tecnologia inovadora permite a impressão 3D de órgãos humanos, revolucionando a medicina e a...</h3>
+            <h3 class="titulo-long"></h3>
           </div>
         </article>
       </aside>

@@ -7,8 +7,12 @@
   grid-auto-flow: column;
 }
 
+.grid-flow-desktop {
+  grid-auto-flow: row;
+}
+
 .grid-cols-2 {
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
 }
 
 .gap-16 {
@@ -29,4 +33,16 @@
 
 .text-lg {
   font: var(--h3);
+}
+
+@media (width >= 80em) {
+  .grid-flow-col {
+    grid-auto-flow: column;
+  }
+  .grid-flow-col-desktop {
+  grid-auto-flow: column;
+}
+  .grid-cols-2 {
+  grid-template-columns: 1fr 1fr;
+}
 }

@@ -25,10 +25,289 @@ section header {
 
 #featured {
   grid-area: featured;
+  max-width: 328px;
   img {
     height: 100%;
     object-fit: cover;
   }
+
+  .card {
+  border-radius: 4px;
+  overflow: hidden;
+  position: relative;
+
+  .robo {
+    width: 328px;
+    height: 400px;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    top: 50%;
+    background: linear-gradient(
+      180deg,
+      transparent 0%,
+      #020617
+    );
+  }
+
+
+
+  figcaption {
+    position: absolute;
+    bottom: 0;
+    font-family: var(--font-family);
+    padding: 16px;
+
+    &:has(.text-lg) {
+      padding: 12px;
+    }
+
+    h2 {
+      margin-top: 8px;
+    }
+  }
+}
+
+.texto-desktop-only {
+  display: none;
+}
+
+.texto-celular::after {
+  content: "Robôs domésticos começam a ser adotados para tarefas..."; 
+  display: block;
+  width: 100%;
+  font: 800 24px/135% var(--font-family);;
+}
+
+}
+
+#weekly {
+  grid-area: weekly;
+  position: relative;
+
+  &>div {
+    grid-template-columns: repeat(1, 333px);
+  }
+
+  img {
+    width: 328px;
+    height: 160px;
+  }
+
+  
+
+  figure {
+    position: relative;
+
+    .content-tag {
+      position: absolute;
+      top: 8px;
+      left: 8px;
+    }
+
+    p {
+        margin-top: 8px;
+        font-weight: 800;
+        font-family: var(--font-family);
+        color: var(--text-color-primary);
+      }
+  }
+}
+
+.texto-e-imagem {
+    /* wrapper holds each article vertically with space */
+    display: grid;
+    gap: 32px;
+    margin-bottom: -2rem;
+  }
+
+.imagens-ia {
+  order: 1;
+  width: 80px;
+  margin-right: 1rem;
+}
+
+.texto-ia {
+  order: 2;
+}
+
+
+
+.texto-desktop-only {
+  display: none;
+}
+
+.texto-titulo-mulher::after {
+  content: "Empresa surpreende o mundo ao anunciar um alg..."; 
+  display: block;
+  width: 100%;
+  font: 800 16px/135% var(--font-family);;
+}
+
+.texto-phone-mulher::after {
+  content: "Em um avanço surpreendente da inteligência artificial, uma empresa anuncia o desenvolvimento de um algoritmo capaz de prever eventos f..."; 
+  display: block;
+  width: 100%;
+  font: 500 14px/135% var(--font-family);
+  color: var(--text-color-secondary);
+}
+
+.texto-titulo-homem::after {
+  content: "Dispositivo portátil promete traduzir instantaneamente..."; 
+  display: block;
+  width: 100%;
+  font: 800 16px/135% var(--font-family);;
+}
+
+.texto-phone-homem::after {
+  content: "Em um mundo cada vez mais conectado, a comunicação sem fronteiras é essencial. Nesse contexto, um dispositivo portátil sur..."; 
+  display: block;
+  width: 100%;
+  font: 500 14px/135% var(--font-family);
+  color: var(--text-color-secondary);
+}
+
+.texto-titulo-homem::after {
+  content: "Dispositivo portátil promete traduzir instantaneamente..."; 
+  display: block;
+  width: 100%;
+  font: 800 16px/135% var(--font-family);;
+}
+
+.texto-titulo-notebook::after {
+  content: "Criados para auxiliar idosos, robôs de companhia ganha..."; 
+  display: block;
+  width: 100%;
+  font: 800 16px/135% var(--font-family);
+}
+
+.texto-phone-notebook::after {
+  content: "A tecnologia não só avança, mas também busca tornar a vida mais significativa para todas as gerações. No cenário atual, os robôs sociais, pr"; 
+  display: block;
+  width: 100%;
+  font: 500 14px/135% var(--font-family);;
+  color: var(--text-color-secondary);
+}
+
+.texto-titulo-mulher-ruiva::after {
+  content: "Aplicativo utiliza inteligência artificial para ajudar usuários..."; 
+  display: block;
+  width: 100%;
+  font: 800 16px/135% var(--font-family);
+}
+
+.texto-phone-mulher-ruiva::after {
+  content: "No turbilhão da vida moderna, onde distrações são abundantes, um aplicativo inovador surge como um aliado indispensável para quem bus..."; 
+  display: block;
+  width: 100%;
+  font: 500 14px/135% var(--font-family);;
+  color: var(--text-color-secondary);
+}
+
+
+#ai {
+  /* basic AI section reset */
+  position: relative;
+
+  p {
+    font-family: var(--font-family);
+  }
+
+  grid-area: ai;
+
+  h3 {
+    margin-block: 8px 4px;
+  }
+
+  /* ensure all AI images fill their wrapper */
+  .imagens-ia img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+}
+
+
+
+
+aside {
+  grid-area: aside;
+}
+
+#more {
+
+  margin-top: 32px;
+
+  h3 {
+    margin-top: 8px;
+  }
+  img {
+    width: 72px;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+  }
+}
+
+.titulo-crypto::after {
+  content: "Aplicativo de monitoramento ambiental ganha destaque, in..."; 
+  display: block;
+  width: 100%;
+  font: 800 14px/135% var(--font-family);;
+}
+
+.titulo-glasses::after {
+  content: "Óculos de realidade virtual com feedback tátil proporcio..."; 
+  display: block;
+  width: 100%;
+  font: 800 14px/135% var(--font-family);;
+}
+
+.titulo-bitcoin::after {
+  content: "Surge uma nova moeda digital baseada em tecnologias sust..."; 
+  display: block;
+  width: 100%;
+  font: 800 14px/135% var(--font-family);;
+}
+
+
+.titulo-drone::after {
+  content: "Empresas de e-commerce implementam frota de drones..."; 
+  display: block;
+  width: 100%;
+  font: 800 14px/135% var(--font-family);;
+}
+
+.titulo-long::after {
+  content: "Tecnologia inovadora permite a impressão 3D de órgãos hu..."; 
+  display: block;
+  width: 100%;
+  font: 800 14px/135% var(--font-family);;
+}
+
+
+
+
+
+@media (width >= 80em) {
+  #featured {
+  grid-area: featured;
+  max-width: 1280px;
+  img {
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .texto-desktop-only {
+    display: initial;
+  }
+
+  .texto-celular::after {
+  content: "Robôs domésticos começam a ser adotados para tarefas..."; 
+  display: none;
+}
 
   .card {
   border-radius: 4px;
@@ -46,6 +325,11 @@ section header {
     );
   }
 
+  .robo {
+    width: 606px;
+    height: 416px;
+  }
+
   figcaption {
     position: absolute;
     bottom: 0;
@@ -61,9 +345,7 @@ section header {
     }
   }
 }
-
 }
-
 #weekly {
   grid-area: weekly;
   position: relative;
@@ -94,35 +376,142 @@ section header {
   }
 }
 
-#ai {
-  p {
-    font-family: var(--font-family);
-  }
-  
-  grid-area: ai;
-  img {
-    width: 176px;
+.texto-desktop-only {
+    display: initial;
   }
 
-  h3 {
-    margin-block: 8px 4px;
-  }
+.texto-titulo-mulher::after {
+  content: "Empresa surpreende o mundo ao anunciar um alg..."; 
+  display: none;
+  width: 100%;
+  font: 800 16px/135% var(--font-family);;
+}
+
+.texto-phone-mulher::after {
+  content: "Em um avanço surpreendente da inteligência artificial, uma empresa anuncia o desenvolvimento de um algoritmo capaz de prever eventos f..."; 
+  display: none;
+  width: 100%;
+  font: 500 14px/135% var(--font-family);
+  color: var(--text-color-secondary);
+}
+
+.texto-titulo-homem::after {
+  content: "Dispositivo portátil promete traduzir instantaneamente..."; 
+  display: none;
+  width: 100%;
+  font: 800 16px/135% var(--font-family);;
+}
+
+.texto-phone-homem::after {
+  content: "Em um mundo cada vez mais conectado, a comunicação sem fronteiras é essencial. Nesse contexto, um dispositivo portátil sur..."; 
+  display: none;
+  width: 100%;
+  font: 500 14px/135% var(--font-family);
+  color: var(--text-color-secondary);
+}
+
+.texto-titulo-homem::after {
+  content: "Dispositivo portátil promete traduzir instantaneamente..."; 
+  display: none;
+  width: 100%;
+  font: 800 16px/135% var(--font-family);;
+}
+
+.texto-titulo-notebook::after {
+  content: "Criados para auxiliar idosos, robôs de companhia ganha..."; 
+  display: none;
+  width: 100%;
+  font: 800 16px/135% var(--font-family);
+}
+
+.texto-phone-notebook::after {
+  content: "A tecnologia não só avança, mas também busca tornar a vida mais significativa para todas as gerações. No cenário atual, os robôs sociais, pr"; 
+  display: none;
+  width: 100%;
+  font: 500 14px/135% var(--font-family);;
+  color: var(--text-color-secondary);
+}
+
+.texto-titulo-mulher-ruiva::after {
+  content: "Aplicativo utiliza inteligência artificial para ajudar usuários..."; 
+  display: none;
+  width: 100%;
+  font: 800 16px/135% var(--font-family);
+}
+
+.texto-phone-mulher-ruiva::after {
+  content: "No turbilhão da vida moderna, onde distrações são abundantes, um aplicativo inovador surge como um aliado indispensável para quem bus..."; 
+  display: none;
+  width: 100%;
+  font: 500 14px/135% var(--font-family);;
+  color: var(--text-color-secondary);
+}
+
+.texto-ia {
+  margin-right: 1rem;
+}
+
+.imagens-ia {
+  width: 176px;
+  order: 2;
+}
+
+.titulo-crypto::after {
+  content: "Aplicativo de monitoramento ambiental ganha destaque, in..."; 
+  display: none;
+  width: 100%;
+  font: 800 14px/135% var(--font-family);;
+}
+
+.titulo-glasses::after {
+  content: "Óculos de realidade virtual com feedback tátil proporcio..."; 
+  display: none;
+  width: 100%;
+  font: 800 14px/135% var(--font-family);;
+}
+
+.titulo-bitcoin::after {
+  content: "Surge uma nova moeda digital baseada em tecnologias sust..."; 
+  display: none;
+  width: 100%;
+  font: 800 14px/135% var(--font-family);;
+}
+
+
+.titulo-drone::after {
+  content: "Empresas de e-commerce implementam frota de drones..."; 
+  display: none;
+  width: 100%;
+  font: 800 14px/135% var(--font-family);;
+}
+
+.titulo-long::after {
+  content: "Tecnologia inovadora permite a impressão 3D de órgãos hu..."; 
+  display: none;
+  width: 100%;
+  font: 800 14px/135% var(--font-family);;
 }
 
 aside {
   grid-area: aside;
 }
 
-#more {
-
-  margin-top: 32px;
-
-  h3 {
-    margin-top: 8px;
-  }
-  img {
-    width: 72px;
-    aspect-ratio: 1/1;
-    object-fit: cover;
-  }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
